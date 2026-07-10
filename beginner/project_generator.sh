@@ -17,7 +17,7 @@ mkdir -p "BASE_DIR/$PROJECT_NAME"
 cd  "$BASE_DIR/$PROJECT_NAME"
 
 # Create virtual environment
-python3 -m venv venv
+python3 -m venv .venv
 
 
 # Create files
@@ -36,7 +36,7 @@ echo "    main()" >> main.py
 echo "# $PROJECT_NAME" > README.md
 echo "## How to run" >> README.md
 echo "\`\`\`bash" >> README.md
-echo "source venv/bin/activate" >> README.md
+echo "source .venv/bin/activate" >> README.md
 echo "python3 main.py" >> README.md
 echo "\`\`\`" >> README.md
 
