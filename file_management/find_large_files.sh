@@ -21,7 +21,7 @@ echo "Searching in: $TARGET"
 echo "Finding files larger than: $SIZE"
 echo "--------------------------------"
 
-find "$TARGET" -type f -size +"$SIZE" -exec ls -lh {} \;
+find "$TARGET" -type f -size +$SIZE -exec du -h {} \;
 
 echo "--------------------------------"
 echo "Search complete."
